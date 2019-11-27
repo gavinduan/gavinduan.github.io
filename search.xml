@@ -17,7 +17,8 @@
 <li>Confirm ESXi host names are added to DNS and are resolvable.                    </li>
 <li>Confirm vCenter host names are added to DNS and are resolvable. (If vCenter for Windows, verify that the resolvable name matches the vCenter host system.)                    </li>
 <li>(Optional) Confirm if SSD storage should be used for vFlash read caching.                    </li>
-<li>Confirm the Host Reference tab in the Configuration Workbook has been populated.                    <h2 id="Physical-Components"><a href="#Physical-Components" class="headerlink" title="Physical Components"></a>Physical Components</h2></li>
+<li>Confirm the Host Reference tab in the Configuration Workbook has been populated.        <a id="more"></a>            
+<h2 id="Physical-Components"><a href="#Physical-Components" class="headerlink" title="Physical Components"></a>Physical Components</h2></li>
 <li>Host Configuration tab in the Configuration Workbook is populated.                    </li>
 <li>Physical hardware installed in data center and connected to power.                    </li>
 <li>Network cables connected to servers.                    </li>
