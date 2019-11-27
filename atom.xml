@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gavinduan.github.io/"/>
-  <updated>2019-11-27T11:02:21.726Z</updated>
+  <updated>2019-11-27T15:41:36.741Z</updated>
   <id>https://gavinduan.github.io/</id>
   
   <author>
@@ -17,11 +17,86 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>vSAN项目实施前置需求检查清单</title>
+    <link href="https://gavinduan.github.io/2019/11/27/vSAN%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%96%BD%E5%89%8D%E7%BD%AE%E9%9C%80%E6%B1%82%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95/"/>
+    <id>https://gavinduan.github.io/2019/11/27/vSAN%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%96%BD%E5%89%8D%E7%BD%AE%E9%9C%80%E6%B1%82%E6%A3%80%E6%9F%A5%E6%B8%85%E5%8D%95/</id>
+    <published>2019-11-27T15:04:50.000Z</published>
+    <updated>2019-11-27T15:41:36.741Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vSAN项目实施前置需求检查清单"><a href="#vSAN项目实施前置需求检查清单" class="headerlink" title="vSAN项目实施前置需求检查清单"></a>vSAN项目实施前置需求检查清单</h1><h2 id="前置硬件准备"><a href="#前置硬件准备" class="headerlink" title="前置硬件准备"></a>前置硬件准备</h2><h3 id="服务器部分"><a href="#服务器部分" class="headerlink" title="服务器部分"></a>服务器部分</h3><ol><li>物理配置</li></ol><ul><li>服务器上架完成</li></ul><ol start="2"><li>固件部分</li></ol><ul><li>服务器各部件固件更新</li><li>服务器RAID卡型号确认，RAID卡ESXi6.0update2驱动准备完毕</li></ul><ol start="3"><li>硬盘部分</li></ol><ul><li>服务器RAID配置完成</li></ul><ol start="4"><li>网络部分</li></ol><ul><li>确认服务器到接入交换机的接口位置，标签<a id="more"></a><h3 id="网络部分"><a href="#网络部分" class="headerlink" title="网络部分"></a>网络部分</h3></li></ul><ol><li>核心交换机部分</li></ol><ul><li>核心vLan网关配置</li><li>虚拟化所使用相应端口的链路聚合配置</li><li>核心交换关闭STP配置□</li><li>虚拟化所使用相应端口vLan Trunk配置</li><li>虚拟化所需端口确定，及相应标签</li></ul><ol start="2"><li>接入交换机部分</li></ol><ul><li>接入交换机上行端口链路聚合配置</li><li>接入交换机关闭STP配置</li><li>接入交换机端口vLan Trunk配置</li><li>接入交换机端口规划确定，及相应标签</li></ul><ol start="3"><li>综合布线部分</li></ol><ul><li>核心交换与接入交换机间跳线</li><li>接入交换机与服务器间条线</li><li>以上各链路测通，光链路测衰减<h3 id="供电部分"><a href="#供电部分" class="headerlink" title="供电部分"></a>供电部分</h3></li><li>确认服务器及网络设备的供电情况<h3 id="制冷部分"><a href="#制冷部分" class="headerlink" title="制冷部分"></a>制冷部分</h3></li><li>确认机房内设备总功率及空调制冷功率<h3 id="机房建筑部分"><a href="#机房建筑部分" class="headerlink" title="机房建筑部分"></a>机房建筑部分</h3></li><li>确认机房地板承重</li><li>确认机房噪音、灰尘及震动</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;vSAN项目实施前置需求检查清单&quot;&gt;&lt;a href=&quot;#vSAN项目实施前置需求检查清单&quot; class=&quot;headerlink&quot; title=&quot;vSAN项目实施前置需求检查清单&quot;&gt;&lt;/a&gt;vSAN项目实施前置需求检查清单&lt;/h1&gt;&lt;h2 id=&quot;前置硬件准备&quot;&gt;&lt;a href=&quot;#前置硬件准备&quot; class=&quot;headerlink&quot; title=&quot;前置硬件准备&quot;&gt;&lt;/a&gt;前置硬件准备&lt;/h2&gt;&lt;h3 id=&quot;服务器部分&quot;&gt;&lt;a href=&quot;#服务器部分&quot; class=&quot;headerlink&quot; title=&quot;服务器部分&quot;&gt;&lt;/a&gt;服务器部分&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;物理配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;服务器上架完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;固件部分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;服务器各部件固件更新&lt;/li&gt;
+&lt;li&gt;服务器RAID卡型号确认，RAID卡ESXi6.0update2驱动准备完毕&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;硬盘部分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;服务器RAID配置完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;网络部分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;确认服务器到接入交换机的接口位置，标签
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://gavinduan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="VMware" scheme="https://gavinduan.github.io/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟化架构升级步骤</title>
+    <link href="https://gavinduan.github.io/2019/11/27/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9E%B6%E6%9E%84%E5%8D%87%E7%BA%A7%E6%AD%A5%E9%AA%A4/"/>
+    <id>https://gavinduan.github.io/2019/11/27/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%9E%B6%E6%9E%84%E5%8D%87%E7%BA%A7%E6%AD%A5%E9%AA%A4/</id>
+    <published>2019-11-27T14:49:09.000Z</published>
+    <updated>2019-11-27T15:43:02.947Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="虚拟化架构升级步骤"><a href="#虚拟化架构升级步骤" class="headerlink" title="虚拟化架构升级步骤"></a>虚拟化架构升级步骤</h1><ol><li>由程工实现协助待实施地市的供电局相关工程师获取现有虚拟化架构信息（所需工具：RVTools），交由虚拟化实施工程师进行分析。现在已经明确需要完成桌面架构与生产架构的分离。</li><li>由虚拟化工程师与程工先行讨论方案，形成实质文档后提交用户方审核。</li><li>获得用户确认后，实施工程师开始准备实施需要的升级镜像与相关文档，包括升级后虚拟化架构所需要的端口列表等。</li><li>抵达用户现场后根据实际环境与用户工程师讨论方案的实际实施步骤，与用户工程师达成一致，如有需要，可进行由用户主管领导牵头的方案讨论会。</li><li>获得用户领导首肯后，准备实施工作，由程工解决行政流程问题。</li><li>完成开票等行政流程后，实施工程师开始清理现有架构，以解决现有环境内的隐患为第一优先，整个项目的实施要求为：优先保证现有架构的强壮性，整个项目需要以一个完整的，强壮的老架构。同时完成桌面业务与生产业务的拆分<a id="more"></a></li><li>确认现有架构足够完善后，排除所有预计中的升级过程中业务中断的风险。经用户确认后，准备升级。</li><li>开始升级后，安装vCenter Server组件（生产架构用需新IP地址），安装过程需严格遵循VMware官方发布的最佳实践文档，新VC命名为：VC-MIS。</li><li>vCenter Server安装完成后，开始接管生产服务器群集（未升级）。成功接管所有生产服务器后，开始将服务器上的生产业务进行集中，使空闲服务器进入维护模式，得到用户工程师确认后，进入机房开始升级位于维护模式下的服务器。</li><li>第一批服务器完成升级后，由VC重新连接升级后的服务器，开始升级后网络配置与存储配置可用性测试。</li><li>完成可用性测试后，启动稳定性测试，检查链路单点，存储单点，虚拟机存储映射冗余。</li><li>稳定性测试完成后，将虚拟机迁移到升级后服务器上，将其他服务器进入维护模式。</li><li>将剩余服务器升级。</li><li>重复步骤10-11检查服务器可用性与稳定性。</li><li>配置群集功能，包括DRS与HA，DRS需确定是否有应用对服务器有依赖性，例如USB加密狗等，如果有需设置DRS亲和性规则。HA需要确认可访问的共享存储数量，如果不够需要与用户工程师讨论（本步骤可以在步骤4讨论）</li><li>完成生产架构升级后，开始桌面架构升级，使用原有VC，确保Citrix桌面的连接不变。</li><li>升级VC，保留现有IP与证书，升级后将虚拟机改名为VC-Desktop。</li><li>连接升级后的VC，添加桌面主机（未升级），升级过程参照步骤9-15</li><li>重新配置Citrix，由于桌面厂商梁工网络情况不佳，无法远程操作，所有操作为虚拟化实施工程师代为实施，明确操作风险，准确实现梁工每一个操作步骤，记录操作过程。</li><li>重新检查升级后架构的完整性与强壮性，与用户工程师讨论日常管理注意事项。</li><li>对用户进行升级后产品培训，主要内容为升级后新增内容，及日常管理所需要了解的注意事项。</li><li>移交安装介质，移交升级过程中产生的文档（升级前后架构文件，实施记录表等）</li><li>由程工与用户主管领导签字验收，完成整个项目实施。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;虚拟化架构升级步骤&quot;&gt;&lt;a href=&quot;#虚拟化架构升级步骤&quot; class=&quot;headerlink&quot; title=&quot;虚拟化架构升级步骤&quot;&gt;&lt;/a&gt;虚拟化架构升级步骤&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;由程工实现协助待实施地市的供电局相关工程师获取现有虚拟化架构信息（所需工具：RVTools），交由虚拟化实施工程师进行分析。现在已经明确需要完成桌面架构与生产架构的分离。&lt;/li&gt;
+&lt;li&gt;由虚拟化工程师与程工先行讨论方案，形成实质文档后提交用户方审核。&lt;/li&gt;
+&lt;li&gt;获得用户确认后，实施工程师开始准备实施需要的升级镜像与相关文档，包括升级后虚拟化架构所需要的端口列表等。&lt;/li&gt;
+&lt;li&gt;抵达用户现场后根据实际环境与用户工程师讨论方案的实际实施步骤，与用户工程师达成一致，如有需要，可进行由用户主管领导牵头的方案讨论会。&lt;/li&gt;
+&lt;li&gt;获得用户领导首肯后，准备实施工作，由程工解决行政流程问题。&lt;/li&gt;
+&lt;li&gt;完成开票等行政流程后，实施工程师开始清理现有架构，以解决现有环境内的隐患为第一优先，整个项目的实施要求为：优先保证现有架构的强壮性，整个项目需要以一个完整的，强壮的老架构。同时完成桌面业务与生产业务的拆分
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://gavinduan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="VMware" scheme="https://gavinduan.github.io/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第一篇博客</title>
-    <link href="https://gavinduan.github.io/2019/11/27/2019-11-26-001/"/>
-    <id>https://gavinduan.github.io/2019/11/27/2019-11-26-001/</id>
+    <link href="https://gavinduan.github.io/2019/11/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://gavinduan.github.io/2019/11/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
     <published>2019-11-26T16:00:00.000Z</published>
-    <updated>2019-11-27T11:02:21.726Z</updated>
+    <updated>2019-11-27T14:56:27.465Z</updated>
     
     <content type="html"><![CDATA[<h2 id="创建这个博客的原因"><a href="#创建这个博客的原因" class="headerlink" title="创建这个博客的原因"></a>创建这个博客的原因</h2><ul><li>为vExport做准备</li><li>梳理自己的知识点</li><li>创建自己的知识库</li></ul><h2 id="该博客的内容"><a href="#该博客的内容" class="headerlink" title="该博客的内容"></a>该博客的内容</h2><ul><li>虚拟化相关知识整理</li><li>整理虚拟化实施运维过程中遇到的问题</li><li>整理相关文档手册</li><li>虚拟化相关知识的科普</li></ul>]]></content>
     
