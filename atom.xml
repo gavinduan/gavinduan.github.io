@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gavin`s Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://gavinduan.github.io/"/>
+  <updated>2019-11-27T11:02:21.726Z</updated>
+  <id>https://gavinduan.github.io/</id>
+  
+  <author>
+    <name>Gavin Duan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="https://gavinduan.github.io/2019/11/27/2019-11-26-001/"/>
+    <id>https://gavinduan.github.io/2019/11/27/2019-11-26-001/</id>
+    <published>2019-11-26T16:00:00.000Z</published>
+    <updated>2019-11-27T11:02:21.726Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建这个博客的原因"><a href="#创建这个博客的原因" class="headerlink" title="创建这个博客的原因"></a>创建这个博客的原因</h2><ul><li>为vExport做准备</li><li>梳理自己的知识点</li><li>创建自己的知识库</li></ul><h2 id="该博客的内容"><a href="#该博客的内容" class="headerlink" title="该博客的内容"></a>该博客的内容</h2><ul><li>虚拟化相关知识整理</li><li>整理虚拟化实施运维过程中遇到的问题</li><li>整理相关文档手册</li><li>虚拟化相关知识的科普</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;创建这个博客的原因&quot;&gt;&lt;a href=&quot;#创建这个博客的原因&quot; class=&quot;headerlink&quot; title=&quot;创建这个博客的原因&quot;&gt;&lt;/a&gt;创建这个博客的原因&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;为vExport做准备&lt;/li&gt;
+&lt;li&gt;梳理自己的知识点&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="随感" scheme="https://gavinduan.github.io/categories/%E9%9A%8F%E6%84%9F/"/>
+    
+    
+      <category term="个人" scheme="https://gavinduan.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
+    
+  </entry>
+  
+</feed>
