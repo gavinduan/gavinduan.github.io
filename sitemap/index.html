@@ -20,7 +20,7 @@
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('https://97.64.46.73').hostname,
+    hostname: new URL('https://gavinduan.github.io').hostname,
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
@@ -50,13 +50,13 @@
   <meta name="keywords" content="VMware">
 <meta property="og:type" content="website">
 <meta property="og:title" content="站点地图">
-<meta property="og:url" content="https:&#x2F;&#x2F;97.64.46.73&#x2F;sitemap&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;gavinduan.github.io&#x2F;sitemap&#x2F;index.html">
 <meta property="og:site_name" content="Gavin&#96;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-27T10:51:14.236Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://97.64.46.73/sitemap/">
+<link rel="canonical" href="https://gavinduan.github.io/sitemap/">
 
 
 <script id="page-configurations">
@@ -225,6 +225,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
         </div>
           
@@ -261,7 +262,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -319,12 +320,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">17k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a>  v4.0.0
   </div>
@@ -396,6 +397,24 @@
   
 
   
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script>
+  NexT.utils.getScript('https://unpkg.com/gitalk/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'f36690627e11bcd976d4',
+      clientSecret: 'da20afd780e9cd8ba649e83bdda8806c9c87eddc',
+      repo: 'gavinduan.github.io',
+      owner: 'gavinduan',
+      admin: ['gavinduan'],
+      id: '3a23b19faf052c9dba45f3a8cedd9a82',
+        language: 'zh-CN',
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
